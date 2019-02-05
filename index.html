@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,6 +50,21 @@ div.indent {
   text-indent: 50px;
 }
 </style>
+<style>
+	.video {
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%; /* Если видео 16/9, то 9/16*100 = 56.25%. Также и с 4/3 - 3/4*100 = 75% */
+}
+.video iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 105%;
+    height: 110%;
+}
+</style>
+
 
   </head>
 
@@ -102,14 +115,15 @@ div.indent {
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><img src="img/New_Logo_S.png" alt=""  /></a>
+					<a class="navbar-brand" href="#home"><img src="img/New_Logo_S.png" alt=""  /></a>
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
 						<li><a id="GoToHome" href="#home" class="selected">Home</a></li>
 						<li><a id="GoToFeatures" href="#features">Features</a></li>	
 						<li><a id="GoToDesc" href="#description">Description</a></li>
-						<li><a id="GoToGallery" href="#screenshot">Screenshot</a></li>
+						<li><a id="GoToGallery" href="#screenshot">Gallery</a></li>
+						<li><a id="GoToGallery" href="#vedio">Vedios</a></li>
 						<li><a id="GoToPricing" href="#pricing">Pricing</a></li>
 						<li><a id="GoToTestimoni" href="#testimoni">Testimonies</a></li>
 						<li><a id="GoToContact" href="#contact">Contact</a></li>							
@@ -130,11 +144,11 @@ div.indent {
 			<div class="container">
 				<div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
 					<div class="col-md-10 col-md-offset-1">
-						<h3>A complete web based solution <span>for your church administration </span></h3>
-						<p class="btn-inline">
+						<h3><font size="10">A complete web based solution</font> <span> <font size="8">for your church administration </font></span> </h3>
+						<br>
+						<!--<p class="btn-inline">
 							<a href="https://www.youtube.com/watch?v=ACZgiDW6A-M&amp;feature=share&amp;list=ALzxNYRMVOCRi5wLzuGUE7XQpqhCfYTwzI" data-pretty="prettyPhoto" class="btn btn-bordered btn-lg zoom">Take a video tour</a>
-							
-						</p>
+						</p>-->
 						<div class="home-slider">
 							<div class="slider-wrapper">
 								<div class="imac-device">
@@ -176,7 +190,7 @@ div.indent {
 			
 			<div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
 				<div class="col-md-8 col-md-offset-2">
-					<h3 class="heading"><span><h1>Features</h1></span>The Featurers of Parishtome</h3>
+					<h3 class="heading"><span><h3></span> The Featurers of Parishtome</h3>
 				</div>
 			</div>
 			<div class="col-md-6 margintop40 wow fadeInRight" data-wow-delay="0.4s">
@@ -227,7 +241,7 @@ div.indent {
 						<div class="accordion-group">
 							<div class="accordion-heading">
 								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse">
-									<i class="pe-7s-cash"></i> <center> Contributions and Giving </center>
+									<i class="pe-7s-cash"></i> <center>Manage Contributions</center>
 								</a>
 								<br>
 								<div class="indent">
@@ -248,10 +262,9 @@ div.indent {
 				</div>
 			</div>
 		</div>
-					<div class="col-md-6 margintop40 wow fadeInRight" data-wow-delay="0.4s">
-				
-					<div class="accordion clearfix" id="accordion1">
-						<div class="row">
+		<div class="col-md-6 margintop40 wow fadeInRight" data-wow-delay="0.4s">
+			<div class="accordion clearfix" id="accordion1">
+				<div class="row">
 					<div class="col-md-12">
 						<div class="accordion-group">
 							<div class="accordion-heading">
@@ -315,13 +328,9 @@ div.indent {
 						</div>
 					</div>
 				</div>
-				</div>
 			</div>
-					
-				
-			</div>
-
-		
+		</div>
+	</div>
 </section>
 	<!-- End features -->
 	
@@ -330,8 +339,7 @@ div.indent {
 	<!-- Start description -->
 	<section id="description" class="contain">
 		<div class="container">
-			
-				<div class="col-md-7 wow fadeInLeft" data-wow-delay="0.4s">
+			<div class="col-md-7 wow fadeInLeft" data-wow-delay="0.4s">
 					<img src="img/device.png" class="img-responsive" alt="" />
 				</div>
 				<div class="col-md-5 margintop40 wow fadeInRight" data-wow-delay="0.4s">
@@ -404,10 +412,11 @@ div.indent {
 				<div class="row text-center appear stats wow fadeInUp" data-wow-delay="0.4s">
 					<div class="col-md-12">
 						<h3>Amazing Launching Offer</h3>
-						<p> <span class="counter-number">*Rs 5000/- Flat Discount </span> <br><font size="12">Only for Limited Period</font> <br> <font size="6"><p align="center"> (*for 45 days)</p></font> </p>
+						<p><h4><span class="counter-number">Rs 5000/- * Flat Discount</span></h4></p>
+						<p> <font size="6">Only for Limited Period</font>  </p> 
+						<font size="5"><p align="center"> (* for 45 days)</p></font>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	</section>
@@ -420,11 +429,11 @@ div.indent {
 		<div class="container">
 			<div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
 				<div class="col-md-10 col-md-offset-1 wow fadeInUp" data-wow-delay="0.4s">
-					<h3 class="heading"><span>Secreenshot</span> Our product screenshot</h3>
+					<h3 class="heading"><span></span>Images Related Parishtome</h3>
 				</div>
 			</div>
 		</div>
-		<div id="screenshot-contain" class="wow fadeInDown" data-wow-delay="0.4s">
+	<div id="screenshot-contain" class="wow fadeInDown" data-wow-delay="0.4s">
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-md-10 col-md-offset-1">
@@ -447,6 +456,21 @@ div.indent {
 										<li>
 											<a href="#"><img src="img/screenshot/img5.png" alt="" /></a>
 										</li>
+										<li>
+											<a href="#"><img src="img/screenshot/img6.png" alt="" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="img/screenshot/img7.png" alt="" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="img/screenshot/img8.png" alt="" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="img/screenshot/img9.png" alt="" /></a>
+										</li>
+										<li>
+											<a href="#"><img src="img/screenshot/img10.png" alt="" /></a>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -460,6 +484,46 @@ div.indent {
 	<!-- End screenshot -->
 	
 	<div class="clearfix"></div>
+
+	<!-- Start screenshot -->
+
+	<section id="vedio" class="contain">
+		<div class="container">
+			<div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
+				<div class="col-md-10 col-md-offset-1 wow fadeInUp" data-wow-delay="0.4s">
+					<h3 class="heading"><span><b>Vedios Related Parishtome</b></span> </h3>
+				</div>
+			</div>
+		</div>
+		<div id="vedio-contain" class="wow fadeInDown" data-wow-delay="0.4s">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+            <div class="video"><iframe src="https://www.youtube.com/embed/Dkx4LYeFnVY?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+		</div>
+		        <div class="col-md-4">
+            <div class="video"><iframe src="https://www.youtube.com/embed/AWdA7hdP4ZA?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+    	</div>
+        <div class="col-md-4">
+    	    <div class="video"><iframe src="https://www.youtube.com/embed/I39RKjerJss?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+		</div>
+        </div>
+				<!--<br>
+				<div class="row">
+		        <div class="col-md-4">
+    	    <div class="video"><iframe src="https://www.youtube.com/embed/I39RKjerJss?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+		</div>
+		<div class="col-md-4">
+            <div class="video"><iframe src="https://www.youtube.com/embed/AWdA7hdP4ZA?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+    	</div>
+        <div class="col-md-4">
+            <div class="video"><iframe src="https://www.youtube.com/embed/Dkx4LYeFnVY?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+		</div>
+	</div>-->
+   </div>
+</div>
+</section>
+	<!-- End screenshot -->
 		
 	<!-- Start pricing -->
 	<section id="pricing" class="contain gray-bg">
@@ -473,21 +537,21 @@ div.indent {
 				<div class="col-md-4">
 					<div class="pricing-wrapper">
 						<div class="pricing-head" >
-							<span class="pricing-price">*6K</span>
-							<h4>Micro-Level</h4>
+							<span class="pricing-price">₹6K*</span>
+							<h4>Micro Level</h4>
 							<p>Upto 250 Members</p>
 						</div>
 						<ul>
-							<li><strong> * Yearly  fee 6K</strong></li>
-							<li>One time <strong> setup fee 15K</strong></li>
+							<li><strong> * Yearly  fee ₹6K</strong></li>
+							<li>One time <strong> setup fee  ₹15K</strong></li>
 							<li><strong>FREE Domain and Hosting</strong></li>
 							<li><strong>FREE Website</strong> with 3 Pages</li>
 							<li><strong>Storage -</strong> 10 GB Dedicated</li>
-							<li>Optional<strong> Online Payment</strong> Integration</li>
 							<li><strong>2 user</strong> access</li>
 							<li><strong>1 GB</strong> bandwidth</li>
 							<li>Import <strong>Family Register</strong> From Excel</li>
 							<li><strong>AUTO UPGRADE </strong> to  new Module</li>
+							<li>Optional<strong> Online Payment</strong> Integration</li>
 							<li><strong>FREE Content Write Tool </strong> <br> Without Keyboard</li>
 							<li><strong>FREE</strong> Social Media Upgrade</li>
 							<li>Optional Church<strong>Mobile App</strong> Monthly Rs 1/- per Member</li>
@@ -500,21 +564,21 @@ div.indent {
 				<div class="col-md-4">
 					<div class="pricing-wrapper">
 						<div class="pricing-head popular">
-							<span class="pricing-price">*10K</span>
-							<h4>Mezzo-Level</h4>
+							<span class="pricing-price">₹10K*</span>
+							<h4>Mezzo Level</h4>
 							<p>Upto 500 Members</p>
 						</div>
 						<ul>
-							<li><strong> * Yearly  fee 10K</strong></li>
-							<li>One time <strong> setup fee 20K</strong></li>
+							<li><strong> * Yearly  fee ₹10K</strong></li>
+							<li>One time <strong> setup fee ₹20K</strong></li>
 							<li><strong>FREE Domain and Hosting</strong></li>
 							<li><strong>FREE Website</strong> with 3 Pages</li>
 							<li><strong>Storage -</strong> 20 GB Dedicated</li>
-							<li>Optional<strong> Online Payment</strong> Integration</li>
 							<li><strong>3 user</strong> access</li>
 							<li><strong>10 GB</strong> bandwidth</li>
 							<li>Import <strong>Family Register</strong> From Excel</li>
 							<li><strong>AUTO UPGRADE </strong> to  new Module</li>
+							<li>Optional<strong> Online Payment</strong> Integration</li>
 							<li><strong>FREE Content Write Tool </strong> <br> Without Keyboard</li>
 							<li><strong>FREE</strong> Social Media Upgrade</li>
 							<li>Optional Church<strong>Mobile App</strong> Monthly Rs 1/- per Member</li>
@@ -527,21 +591,21 @@ div.indent {
 				<div class="col-md-4">
 					<div class="pricing-wrapper">
 						<div class="pricing-head">
-							<span class="pricing-price">*15K</span>
-							<h4>Macro-Level</h4>
+							<span class="pricing-price">₹15K*</span>
+							<h4>Macro Level</h4>
 							<p>Upto 1000 Members</p>
 						</div>
 						<ul>
-							<li><strong> * Yearly  fee 15K</strong></li>
-							<li>One time <strong> setup fee 35K</strong></li>
+							<li><strong> * Yearly  fee  ₹15K</strong></li>
+							<li>One time <strong> setup fee  ₹35K</strong></li>
 							<li><strong>FREE Domain and Hosting</strong></li>
 							<li><strong>FREE Website</strong> with 3 Pages</li>
 							<li><strong>Storage -</strong> 30 GB Dedicated</li>
-							<li>Optional<strong> Online Payment</strong> Integration</li>
 							<li><strong>4 user</strong> access</li>
 							<li><strong>100 GB</strong> bandwidth</li>
 							<li>Import <strong>Family Register</strong> From Excel</li>
 							<li><strong>AUTO UPGRADE </strong> to  new Module</li>
+							<li>Optional<strong> Online Payment</strong> Integration</li>
 							<li><strong>FREE Content Write Tool </strong> <br> Without Keyboard</li>
 							<li><strong>FREE</strong> Social Media Upgrade</li>
 							<li>Optional Church<strong>Mobile App</strong> Monthly Rs 1/- per Member</li>
@@ -565,7 +629,7 @@ div.indent {
 				<div class="row wow fadeInUp" data-wow-delay="0.4s">
 					<div class="col-md-8 col-md-offset-2">
 						<font size="6"><b>Receive Brochure and Quotation</b></font>
-						<p>Risk Free & 30 Day Money Back Guarantee.</p>
+						<p>Request for Quote Letter and details of Parishtome</p>
 						<form>
 							<fieldset class="subscribe-form">
 								<input class="subscribe" type="text" placeholder="Enter your email address">
@@ -596,7 +660,7 @@ div.indent {
 					<div class="col-md-4">
 						<div class="testimonial">
 							<blockquote style="text-align:justify">
-							This is an excellent Church software application which contain immense features which covers all the church administration needs
+							This is an excellent and useful Church management software which contain immense features which covers all the church administration needs
 							</blockquote>
 							<span class="testimoni-sparator"></span>
 						</div>
@@ -604,9 +668,8 @@ div.indent {
 						<div class="testimoni-author">
 							<div class="author-info">
 								
-								<h5>Most Rev. Dr. J.W Gladstone</h5>
-								<p><a href="#">Former Moderator & Bishop of CSI SKD 
-</a></p>
+								<h5>Most Rev.Dr.J.W Gladstone</h5>
+								<p><a href="#">Former Moderator & Bishop of CSI SKD</a></p>
 							</div>
 							<img src="img/testimoni/Gladstone.jpg" alt="" />
 						</div>
@@ -646,58 +709,6 @@ div.indent {
 					</div>
 				</div>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="testimonial">
-							<blockquote style="text-align:justify">
-							An adhuc consequat mel, usu in utroque dolorem. Nam diceret aliquam singulis no veri.
-							</blockquote>
-							<span class="testimoni-sparator"></span>
-						</div>
-						<div class="clearfix"></div>
-						<div class="testimoni-author">
-							<div class="author-info">
-								<h5>Kang abin</h5>
-								<p><a href="#">99webpage designer</a></p>
-							</div>
-							<img src="img/testimoni/avatar4.png" alt="" />
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="testimonial">
-							<blockquote style="text-align:justify">
-							Minimum albucius detraxit qui eu, veniam equidem eum in, constituam referrentur ius et.
-							</blockquote>
-							<span class="testimoni-sparator"></span>
-						</div>
-						<div class="clearfix"></div>
-						<div class="testimoni-author">
-							<div class="author-info">
-								<h5>Mang idi</h5>
-								<p><a href="#">99webpage marketing</a></p>
-							</div>
-							<img src="img/testimoni/avatar5.png" alt="" />
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="testimonial">
-							<blockquote style="text-align:justify">
-							 Aperiri facilis in pro, vis idque harum ex, ex vocent utroque similique vi intellegebat eam.
-							</blockquote>
-							<span class="testimoni-sparator"></span>
-						</div>
-						<div class="clearfix"></div>
-						<div class="testimoni-author">
-							<div class="author-info">
-								<h5>Ceu onah</h5>
-								<p><a href="#">99webpage co-marketing</a></p>
-							</div>
-							<img src="img/testimoni/avatar6.png" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>		
 		</div>
 	</section>
 	<!-- End testimoni -->
@@ -924,8 +935,5 @@ div.indent {
 	<!-- Theme option -->
 	<script src="js/theme-option/colorpicker.js"></script>	
 	<script src="js/theme-option/optionspanel.js"></script>	
-	
-  </body>
-
-
+</body>
 </html>

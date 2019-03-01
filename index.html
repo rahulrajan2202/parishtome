@@ -123,7 +123,7 @@ div.indent {
 						<li><a id="GoToFeatures" href="#features">Features</a></li>	
 						<li><a id="GoToDesc" href="#description">Description</a></li>
 						<li><a id="GoToGallery" href="#screenshot">Gallery</a></li>
-						<li><a id="GoToGallery" href="#vedio">Vedios</a></li>
+						<li><a id="GoToGallery" href="#video">videos</a></li>
 						<li><a id="GoToPricing" href="#pricing">Pricing</a></li>
 						<li><a id="GoToTestimoni" href="#testimoni">Testimonies</a></li>
 						<li><a id="GoToContact" href="#contact">Contact</a></li>							
@@ -144,8 +144,9 @@ div.indent {
 			<div class="container">
 				<div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
 					<div class="col-md-10 col-md-offset-1">
-						<h3><font size="10">A complete web based solution</font> <span> <font size="8">for your church administration </font></span> </h3>
 						<br>
+						<h3><font size="10">A complete web based solution</font> <span> <font size="8">for your church administration </font></span> </h3>
+						
 						<!--<p class="btn-inline">
 							<a href="https://www.youtube.com/watch?v=ACZgiDW6A-M&amp;feature=share&amp;list=ALzxNYRMVOCRi5wLzuGUE7XQpqhCfYTwzI" data-pretty="prettyPhoto" class="btn btn-bordered btn-lg zoom">Take a video tour</a>
 						</p>-->
@@ -487,15 +488,15 @@ div.indent {
 
 	<!-- Start screenshot -->
 
-	<section id="vedio" class="contain">
+	<section id="video" class="contain">
 		<div class="container">
 			<div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
 				<div class="col-md-10 col-md-offset-1 wow fadeInUp" data-wow-delay="0.4s">
-					<h3 class="heading"><span><b>Vedios Related Parishtome</b></span> </h3>
+					<h3 class="heading"><span><b>Videos Related Parishtome</b></span> </h3>
 				</div>
 			</div>
 		</div>
-		<div id="vedio-contain" class="wow fadeInDown" data-wow-delay="0.4s">
+		<div id="video-contain" class="wow fadeInDown" data-wow-delay="0.4s">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -537,7 +538,7 @@ div.indent {
 				<div class="col-md-4">
 					<div class="pricing-wrapper">
 						<div class="pricing-head" >
-							<span class="pricing-price">₹6K*</span>
+							<span class="pricing-price">₹6K</span>
 							<h4>Micro Level</h4>
 							<p>Upto 250 Members</p>
 						</div>
@@ -557,14 +558,15 @@ div.indent {
 							<li>Optional Church<strong>Mobile App</strong> Monthly Rs 1/- per Member</li>
 						</ul>
 						<div class="pricing-bottom">
-							<a href="#" class="btn btn-default btn-bordered btn-lg">Get it now</a>
+							<a href="#contact" class="btn btn-default btn-bordered btn-lg">Get it now</a>
+
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="pricing-wrapper">
 						<div class="pricing-head popular">
-							<span class="pricing-price">₹10K*</span>
+							<span class="pricing-price">₹10K</span>
 							<h4>Mezzo Level</h4>
 							<p>Upto 500 Members</p>
 						</div>
@@ -584,14 +586,14 @@ div.indent {
 							<li>Optional Church<strong>Mobile App</strong> Monthly Rs 1/- per Member</li>
 						</ul>
 						<div class="pricing-bottom">
-							<a href="#" class="btn btn-primary btn-lg">Get it now</a>
+							<a href="#contact" class="btn btn-primary btn-lg">Get it now</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="pricing-wrapper">
 						<div class="pricing-head">
-							<span class="pricing-price">₹15K*</span>
+							<span class="pricing-price">₹15K</span>
 							<h4>Macro Level</h4>
 							<p>Upto 1000 Members</p>
 						</div>
@@ -611,7 +613,7 @@ div.indent {
 							<li>Optional Church<strong>Mobile App</strong> Monthly Rs 1/- per Member</li>
 						</ul>
 						<div class="pricing-bottom">
-							<a href="#" class="btn btn-default btn-bordered btn-lg">Get it now</a>
+							<a a href="#contact" class="btn btn-default btn-bordered btn-lg">Get it now</a>
 						</div>
 					</div>
 				</div>	
@@ -809,7 +811,7 @@ div.indent {
 				</div>
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 wow fadeInDown" data-wow-delay="0.4s">
-						<form id="contactform" action="http://99webpage.com/theme-review/landingpage/meminz/contact/contact.php" method="post" class="validateform" name="leaveContact">
+						<form id="contactform" action="action_page.php" method="post" class="validateform" name="leaveContact">
 							<div class="clearfix"></div>
 							<div id="sendmessage">
 								<div class="alert alert-info marginbot35">
@@ -820,16 +822,28 @@ div.indent {
 							<ul class="listForm">
 								<li>
 									<i class="pe-7s-users"></i>
-									<input class="form-control input-name" type="text" name="name" data-rule="required" data-msg="Required field" placeholder="Enter your full name" />
+									<input class="form-control input-name" type="text" name="first_name" data-rule="required" data-msg="Required field" placeholder="Enter your full name" />
 									<div class="validation"></div>
 								</li>
 								<li>
-									<i class="pe-7s-mail"></i>
-									<input class="form-control input-email" type="text" name="email" data-rule="email" data-msg="Please enter a valid email" placeholder="Enter your email address" />	
+									<i class="pe-7s-mail-open-file"></i>
+									<input class="form-control input-email" type="text" name="email" data-rule="required" data-msg="Please enter a valid email" placeholder="Enter your email address" />	
 									<div class="validation"></div>
 								</li>
+								<br>
+								<li>
+									<i class="pe-7s-call"></i>
+									<input class="form-control input-name" type="text" name="telephone" data-rule="required" data-msg="Required field" placeholder="Enter your Phone number" />
+									<div class="validation"></div>
+								</li>
+								<li>
+									<i class="pe-7s-portfolio"></i>
+									<input class="form-control input-name" type="text" name="code" data-rule="required" data-msg="Required field" placeholder="Enter your Product code (6K, 10K, 15K)" />
+									<div class="validation"></div>
+								</li>
+								
 								<li class="push">
-									<i class="pe-7s-paper-plane"></i>
+									<i class="pe-7s-pen"></i>
 									<textarea class="form-control input-message" rows="6" name="message" data-rule="required" data-msg="Please write something for us" placeholder="Write something for us"></textarea>
 									<div class="validation"></div>
 								</li>
